@@ -33,11 +33,24 @@ class ProductManager {
     }
 
     updateProduct = async (id , newProduct )=>{
-      
         this.#arrayProducts = await this.#retrieveData()
         this.#arrayProducts.forEach(product=>{
-            if (product.id === id) product = newProduct 
+            if (product.id === id) {
+                let {name,description,price, thubnail,code,stock} = newProduct
+                product.name = name
+                product.description=description
+                product.price = price
+                product.thubnail = thubnail
+                product.code = code 
+                product.stock = stock
+            }
         })
+        this.#saveData()
+    }
+
+    deleteProduct = async (id)=>{
+        let array = await this.#retrieveData()
+        this.#arrayProducts=array.filter(element => {return element.id != id});
         this.#saveData()
     }
   
@@ -65,5 +78,15 @@ const productManager = new ProductManager (`./productos.json` , `utf-8`)
 
 let product = await productManager.getPruductsByid(2)
 
-console.log (product)
+const producto = {
+    name : "ps2",
+    description:"consola",
+    price : 1500,
+    thubnail : "www-g",
+    code:"105",
+    stock : 5
+}
+
+
+productManager.deleteProduct(2)
 

@@ -1,20 +1,11 @@
 [
 	{
 		"id": 1,
-		"name": "asd",
-		"description": "ASD",
+		"name": "ps2",
+		"description": "consola",
 		"price": 1500,
-		"thubnail": "WWw",
-		"code": "1200",
-		"stock": 5
-	},
-	{
-		"id": 2,
-		"name": "asd",
-		"description": "ASD",
-		"price": 1500,
-		"thubnail": "WWw",
-		"code": "1200",
+		"thubnail": "www-g",
+		"code": "105",
 		"stock": 5
 	},
 	{
