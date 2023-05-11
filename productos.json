@@ -1,1 +1,29 @@
-[{"id":1,"name":"Play Station 2","description":"Consola de juegos","price":1500,"thubnail":"www.google.com","code":"1001","stock":5},{"id":2,"name":"Play Station 2","description":"Consola de juegos","price":1500,"thubnail":"www.google.com","code":"1001","stock":5}]
+[
+	{
+		"id": 1,
+		"name": "asd",
+		"description": "ASD",
+		"price": 1500,
+		"thubnail": "WWw",
+		"code": "1200",
+		"stock": 5
+	},
+	{
+		"id": 2,
+		"name": "asd",
+		"description": "ASD",
+		"price": 1500,
+		"thubnail": "WWw",
+		"code": "1200",
+		"stock": 5
+	},
+	{
+		"id": 3,
+		"name": "asd",
+		"description": "ASD",
+		"price": 1500,
+		"thubnail": "WWw",
+		"code": "1200",
+		"stock": 5
+	}
+]

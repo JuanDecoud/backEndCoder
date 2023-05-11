@@ -5,8 +5,7 @@ class ProductManager {
     #patchFile
     #arrayProducts 
     #fileType
-    #msgError
-
+  
     constructor (patchFile , typeFile){
         this.#patchFile = patchFile
         this.#fileType = typeFile
@@ -14,22 +13,43 @@ class ProductManager {
     }
 
     addProduct =async (name,description,price, thubnail,code,stock)=>{
-        
-        this.#retrieveData()
+        this.#arrayProducts = await this.#retrieveData()
         this.#arrayProducts.push({id:this.#generateId(),name,description,price,thubnail,code,stock}) 
         this.#saveData()
     }
 
-    #retrieveData = async ()=> {
-        let data = null
-        if (fs.existsSync(this.#patchFile)) data =  JSON.parse( await fs.promises.readFile(this.#patchFile , this.#fileType))
-        this.#arrayProducts = data ? data : []
+    getProducts = async  ()=>{
+        this.#arrayProducts = await this.#retrieveData()
+        return  this.#arrayProducts
     }
 
+    getPruductsByid = async (id)=>{
+        let productSearch = null
+        this.#arrayProducts = await this.#retrieveData()
+        this.#arrayProducts.forEach(product=>{
+            if (product.id === id) productSearch = product
+        })
+        return productSearch
+    }
+
+    updateProduct = async (id , newProduct )=>{
+      
+        this.#arrayProducts = await this.#retrieveData()
+        this.#arrayProducts.forEach(product=>{
+            if (product.id === id) product = newProduct 
+        })
+        this.#saveData()
+    }
+  
     #saveData = async ()=> {
-        await  fs.promises.writeFile(this.#patchFile , JSON.stringify(this.#arrayProducts))
+        await  fs.promises.writeFile(this.#patchFile , JSON.stringify(this.#arrayProducts,null,"\t"))
     }
 
+    #retrieveData= async ()=>{
+        let data = null
+        data= JSON.parse( await fs.promises.readFile(this.#patchFile, this.#fileType))
+        return data
+    }
     #generateId =  ()=>{
         let id = 1 ;
         if (this.#arrayProducts.lenght !=0){
@@ -42,7 +62,8 @@ class ProductManager {
 }
 
 const productManager = new ProductManager (`./productos.json` , `utf-8`)
-productManager.addProduct("Play Station 2" , "Consola de juegos" , 1500,"www.google.com","1001", 5)
-productManager.addProduct("Play Station 2" , "Consola de juegos" , 1500,"www.google.com","1001", 5)
 
+let product = await productManager.getPruductsByid(2)
+
+console.log (product)
 
