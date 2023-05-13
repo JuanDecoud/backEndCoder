@@ -45,13 +45,13 @@ class ProductManager {
                 product.stock = stock
             }
         })
-        this.#saveData()
+       await this.#saveData()
     }
 
     deleteProduct = async (id)=>{
         let array = await this.#retrieveData()
         this.#arrayProducts=array.filter(element => {return element.id != id});
-        this.#saveData()
+        await this.#saveData()
     }
   
     #saveData = async ()=> {
