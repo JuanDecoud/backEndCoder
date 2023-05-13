@@ -14,7 +14,6 @@ class ProductManager {
 
     addProduct =async (name,description,price, thubnail,code,stock)=>{
         this.#arrayProducts = await this.#retrieveData()
-        console.log (this.#arrayProducts)
         this.#arrayProducts.push({id:this.#generateId(),name,description,price,thubnail,code,stock}) 
        await this.#saveData()
     }
@@ -62,8 +61,7 @@ class ProductManager {
     #retrieveData= async ()=>{
         let data = []
        if(fs.existsSync(this.#patchFile)) data= JSON.parse( await fs.promises.readFile(this.#patchFile, this.#fileType))
-       console.log(await data)
-       return data
+       return await data
     }
     #generateId =  ()=>{
         let id = 1 ;
@@ -78,9 +76,9 @@ class ProductManager {
 
 const productManager = new ProductManager (`./productos.json` , `utf-8`)
 
- productManager.addProduct("Xbox 360" , "COnsola Juegos" , 2100 , "www" ,"1500",5)
-
-
+await productManager.addProduct("asd123f" , "COnsola Juegos" , 2100 , "www" ,"1500",5)
+await productManager.addProduct("fg" , "COnsola Juegos" , 2100 , "www" ,"1500",5)
+await productManager.addProduct("hi" , "COnsola Juegos" , 2100 , "www" ,"1500",5)
 
 
 

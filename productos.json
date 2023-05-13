@@ -1,7 +1,7 @@
 [
 	{
 		"id": 1,
-		"name": "Xbox 360",
+		"name": "asdf",
 		"description": "COnsola Juegos",
 		"price": 2100,
 		"thubnail": "www",
@@ -10,7 +10,7 @@
 	},
 	{
 		"id": 2,
-		"name": "Xbox 360",
+		"name": "hi",
 		"description": "COnsola Juegos",
 		"price": 2100,
 		"thubnail": "www",
@@ -19,7 +19,25 @@
 	},
 	{
 		"id": 3,
-		"name": "Xbox 360",
+		"name": "asd123f",
+		"description": "COnsola Juegos",
+		"price": 2100,
+		"thubnail": "www",
+		"code": "1500",
+		"stock": 5
+	},
+	{
+		"id": 4,
+		"name": "fg",
+		"description": "COnsola Juegos",
+		"price": 2100,
+		"thubnail": "www",
+		"code": "1500",
+		"stock": 5
+	},
+	{
+		"id": 5,
+		"name": "hi",
 		"description": "COnsola Juegos",
 		"price": 2100,
 		"thubnail": "www",
