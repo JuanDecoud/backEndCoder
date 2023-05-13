@@ -1,20 +1,29 @@
 [
 	{
 		"id": 1,
-		"name": "ps2",
-		"description": "consola",
-		"price": 1500,
-		"thubnail": "www-g",
-		"code": "105",
+		"name": "Xbox 360",
+		"description": "COnsola Juegos",
+		"price": 2100,
+		"thubnail": "www",
+		"code": "1500",
+		"stock": 5
+	},
+	{
+		"id": 2,
+		"name": "Xbox 360",
+		"description": "COnsola Juegos",
+		"price": 2100,
+		"thubnail": "www",
+		"code": "1500",
 		"stock": 5
 	},
 	{
 		"id": 3,
-		"name": "asd",
-		"description": "ASD",
-		"price": 1500,
-		"thubnail": "WWw",
-		"code": "1200",
+		"name": "Xbox 360",
+		"description": "COnsola Juegos",
+		"price": 2100,
+		"thubnail": "www",
+		"code": "1500",
 		"stock": 5
 	}
 ]
