@@ -1,83 +1,38 @@
 [
 	{
 		"id": 1,
-		"name": "asdf",
+		"name": "Play Station IV",
 		"description": "COnsola Juegos",
-		"price": 2100,
+		"price": 3000,
 		"thubnail": "www",
-		"code": "1500",
-		"stock": 5
+		"code": "1301",
+		"stock": 3
 	},
 	{
 		"id": 2,
-		"name": "hi",
+		"name": "Xbox360",
 		"description": "COnsola Juegos",
-		"price": 2100,
+		"price": 1500,
 		"thubnail": "www",
-		"code": "1500",
-		"stock": 5
+		"code": "1302",
+		"stock": 4
 	},
 	{
 		"id": 3,
-		"name": "asd123f",
-		"description": "COnsola Juegos",
-		"price": 2100,
+		"name": "Core I5",
+		"description": "Procesador",
+		"price": 1300,
 		"thubnail": "www",
-		"code": "1500",
-		"stock": 5
+		"code": "1303",
+		"stock": 2
 	},
 	{
 		"id": 4,
-		"name": "fg",
-		"description": "COnsola Juegos",
-		"price": 2100,
+		"name": "Memoria Ram 8gb",
+		"description": "Memoria ram",
+		"price": 1800,
 		"thubnail": "www",
-		"code": "1500",
-		"stock": 5
-	},
-	{
-		"id": 5,
-		"name": "hi",
-		"description": "COnsola Juegos",
-		"price": 2100,
-		"thubnail": "www",
-		"code": "1500",
-		"stock": 5
-	},
-	{
-		"id": 6,
-		"name": "asd123f",
-		"description": "COnsola Juegos",
-		"price": 2100,
-		"thubnail": "www",
-		"code": "1500",
-		"stock": 5
-	},
-	{
-		"id": 7,
-		"name": "bigoten",
-		"description": "COnsola Juegos",
-		"price": 2100,
-		"thubnail": "www",
-		"code": "1500",
-		"stock": 5
-	},
-	{
-		"id": 8,
-		"name": "bigoten",
-		"description": "COnsola Juegos",
-		"price": 2100,
-		"thubnail": "www",
-		"code": "1500",
-		"stock": 5
-	},
-	{
-		"id": 9,
-		"name": "bigoten2",
-		"description": "COnsola Juegos",
-		"price": 2100,
-		"thubnail": "www",
-		"code": "1500",
-		"stock": 5
+		"code": "1304",
+		"stock": 2
 	}
 ]

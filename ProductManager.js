@@ -1,7 +1,5 @@
 import fs from 'fs'
-
-
-class ProductManager {
+ export default class ProductManager {
     #patchFile
     #arrayProducts 
     #fileType
@@ -75,10 +73,6 @@ class ProductManager {
 }
 
 const productManager = new ProductManager (`./productos.json` , `utf-8`)
-
-await productManager.addProduct("asd123f" , "COnsola Juegos" , 2100 , "www" ,"1500",5)
-await productManager.addProduct("fg" , "COnsola Juegos" , 2100 , "www" ,"1500",5)
-await productManager.addProduct("hi" , "COnsola Juegos" , 2100 , "www" ,"1500",5)
 
 
 
