@@ -1,6 +1,5 @@
 import express from "express"
 import ProductManager from "./ProductManager.js"
-import fs from 'fs'
 
 const app = express ()
 const productManager = new ProductManager (`./productos.json` , `utf-8`)
