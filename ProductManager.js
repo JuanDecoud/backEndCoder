@@ -25,9 +25,10 @@ import fs from 'fs'
         let productSearch = null
         this.#arrayProducts = await this.#retrieveData()
         this.#arrayProducts.forEach(product=>{
-            if (product.id === id) productSearch = product
+            if (product.id == id) productSearch = product
+            console.log (productSearch)
         })
-        return productSearch
+        return  productSearch
     }
 
     updateProduct = async (id , newProduct )=>{

@@ -16,10 +16,10 @@ app.get (`/Products` ,async (req , res)=>{
         res.send(productsWlimit)
     }
     if (pid!=undefined){
-        let searchProduct = products.find(element=> element.id == pid)
-        if (searchProduct ===undefined)res.send (`no se encuentra el producto`)
+        let searchProduct = await  productManager.getPruductsByid(pid)
+        if (!searchProduct ) res.send (`no se encuentra el producto`)
         else res.json (searchProduct)
     }
-    if (limit === undefined && pid === undefined)res.send(products)
+    if (limit === undefined && !pid ) res.send(products)
 })
 
